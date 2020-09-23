@@ -30,8 +30,8 @@ int main(int argc, const char **argv) {
     01:00.3 0200: 8086:1572 (rev 01)
                        ^^^^ find this field
    */
-  int devid  = FILL_ME_IN; // 0x1572 = Intel X710 DA4
-  const char *ethDev = FILL_ME_IN; // "eth3" = If card is on eth3
+  int devid  = 0x1583; // 0x1572 = Intel X710 DA4
+  const char *ethDev = "p1p1"; // "eth3" = If card is on eth3
   
   if (argc >= 2) offset = strtol(argv[1], 0, 0)*2;
   if (argc >= 3) length = strtol(argv[2], 0, 0)*2;
